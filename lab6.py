@@ -1,4 +1,6 @@
 import numpy as np
+
+
 # # zad 1
 # a = 4 * (np.arange(1, 21))
 # print(a)
@@ -18,13 +20,12 @@ import numpy as np
 #
 # poteg2(int(input("n: ")))
 
-# # zad 4 popraw
+# # zad 4
 # def poteg(n, i):
-#     wynik = np.logspace(1, 8, num=i, base=n)
-#     return wynik
+#     return np.logspace(1, i, num=i, endpoint=True, base=n)
 #
 #
-# print(poteg(2, 4))
+# print(poteg(int(input("n: ")), int(input("i: "))))
 
 # # zad 5
 # def macwek(n):
@@ -38,12 +39,19 @@ import numpy as np
 
 # zad 6 zrob
 
-# # zad 7 popraw
-def macwielokro(n):
-    wektor = 2*(np.arange(1, n+1))
-    print(wektor)
-
-macwielokro(int(input("n: ")))
+# # zad 7
+# def macwielokro(n):
+#     a = np.diag(np.linspace(2, 2, num=n, dtype=int))
+#     for i in range(n - 1):
+#         b = np.diag(np.linspace(2 * (i + 2), 2 * (i + 2), num=n, dtype=int), k=i + 1)
+#         b = b[:n, :n]
+#         c = np.diag(np.linspace(2 * (i + 2), 2 * (i + 2), num=n, dtype=int), k=-i - 1)
+#         c = c[:n, :n]
+#         a = a + b + c
+#     return a
+#
+#
+# print(macwielokro(int(input("n: "))))
 
 # # zad 8
 # def ciac(n, kierunek):
